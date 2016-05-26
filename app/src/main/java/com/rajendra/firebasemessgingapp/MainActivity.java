@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendToServer(String name) {
        String userid = FirebaseInstanceId.getInstance().getToken();
+        Log.d(Tag,"userid"+userid);
         Ion.with(this).load("http://akshaymandloi.com/insert_db.php").setBodyParameter("userid",userid).setBodyParameter("name",name).asString().setCallback(new FutureCallback<String>() {
             @Override
             public void onCompleted(Exception e, String result) {

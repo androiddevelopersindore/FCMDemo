@@ -13,6 +13,8 @@ import com.google.firebase.messaging.RemoteMessage;
 import com.rajendra.firebasemessgingapp.MainActivity;
 import com.rajendra.firebasemessgingapp.R;
 
+import java.util.Map;
+
 /**
  * Created by rajendraverma on 23-05-2016.
  */
@@ -21,10 +23,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-String msg = remoteMessage.getNotification().getBody();
-        sendNotification(msg);
+         Map<String,String> values= remoteMessage.getData();
+                sendNotification(values.get("title"));
 
     }
+
+
 
     private void sendNotification(String messageBody) {
         Intent intent = new Intent(this, MainActivity.class);
