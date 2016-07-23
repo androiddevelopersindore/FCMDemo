@@ -1,0 +1,6 @@
+{
+  "name": "Fcmdemo",
+  "tagline": "",
+  "body": "# FCM Demo \r\nFirebase push notification, it is advance version of GCM. We can send message though firebase console and php code also. \r\n\r\nWe create this project to explore Firebase. we have some other interesting feature of firebase  which is interesting and useful in co-corporate for development. \r\n\r\n##here are some important feature of firebase \r\n  1. Firebase social authentication. \r\n\r\n2.  Firebase real time database \r\n\r\n3. firebase analytics \r\n\r\n4. firebase crashlytics \r\n\r\n## Developer Contributor \r\n\r\nWe want need contributor who  can explore firebase ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
